@@ -7,7 +7,7 @@
 
 *(colors on right chat client are disorded due to video encoding of software used for this recording)*
 
-<img src="https://www.linkpicture.com/q/Client-1-slika.png" width="500" height="450"><img src="https://i.imgur.com/B8dGV4Y.png" width="500" height="450">
+<img src="https://www.linkpicture.com/q/Client-1-slika.png" width="50%" height="450"><img src="https://i.imgur.com/B8dGV4Y.png" width="50%" height="450">
 
 
 Requirements to run:
