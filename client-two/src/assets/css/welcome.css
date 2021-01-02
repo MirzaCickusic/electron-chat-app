@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Bold.ttf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+body {
+    background-image: url("../images/welcome-background.png");
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Overpass;
+}
+
+.login-page {
+    width: 600px;
+    padding: 12% 0 0;
+    margin: auto;
+}
+
+
+.form {
+    background: rgba(1,1,1,0);
+    padding: 45px;
+    max-height: 560px;
+    text-align: center;
+
+}
+
+.form input {
+    font-family: Overpass, sans-serif;
+    outline: 0;
+    background: rgba(248, 248, 248, 0);
+    width: 100%;
+    border: 0;
+    margin: 24px 0 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+::placeholder{
+    color: white;
+}
+
+#username-input{
+    border-bottom: 1px solid white;
+}
+
+#port-input{
+    border-bottom: 1px solid white;
+}
+
+#welcome-message-one {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form button {
+    font-family: Overpass, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #6d79ab;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 8% 0 8%;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #434b6d;
+}
+
+.form .message {
+    color: #515c89;
+    font-size: 14px;
+    user-select: none;
+}
+
+.form .message b {
+    color: #969ebd;
+    text-decoration: none;
+}
+
+
+
+.error {
+    font-family: overpass;
+    padding-top: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    color: #4bb3c0;
+}
+
+.error:hover {
+    user-select: none;
+}
+
+#button {
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 16px;
+}

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Bold.ttf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+.login-page {
+    width: 560px;
+    padding: 12% 0 0;
+    margin: auto;
+}
+
+.form {
+    background: #FFFFFF;
+    padding: 45px;
+    max-height: 560px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 24px;
+
+}
+
+.form input {
+    font-family: Overpass, sans-serif;
+    outline: 0;
+    background: rgb(248, 248, 248);
+    width: 100%;
+    border: 0;
+    margin: 24px 0 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+
+#welcome-message-one {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+}
+
+#welcome-message-two{
+    font-family: Overpass;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-style: normal;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form button {
+    font-family: Overpass, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 8% 0 8%;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #43A047;
+}
+
+.form .message {
+    color: #535353;
+    font-size: 14px;
+    user-select: none;
+}
+
+.form .message b {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Overpass;
+}
+
+.error {
+    font-family: overpass;
+    padding-top: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    color: #535353;
+    color: red;
+}
+
+.error:hover {
+    user-select: none;
+}
+
+#button {
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 16px;
+}
+

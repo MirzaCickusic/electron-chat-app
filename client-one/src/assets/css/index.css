@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Bold.ttf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'overpass';
+    src: url("../fonts/Overpass-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Overpass;
+}
+
+html {
+    font-family: Overpass;
+    background: #2B2E3B;
+    font-size: 10px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    max-width: 650px;
+    max-height: 700px;
+    width: 100%;
+    height: 95vh;
+    background: rgb(243, 246, 255);
+    border-radius: 32px;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 0.5;
+}
+
+div:nth-of-type(2) {
+    flex-grow: 10;
+}
+
+div:nth-of-type(3) {
+    flex-grow: 0.5;
+}
+
+
+#chat-title {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    max-height: 100px;
+    font-weight: bold;
+    font-size: 2.0rem;
+    border-radius: 10px 10px 0 0;
+    padding: 20px 20px;
+}
+
+#user-name-status {
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 100px;
+    margin-left: 16px;
+    white-space: nowrap;
+}
+
+#user-name {
+    font-family: Overpass;
+    font-weight: 800;
+    color: rgb(71, 78, 88);
+
+}
+
+#user-status {
+    font-family: Overpass;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(86, 91, 99);
+}
+
+#avatar {
+    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+}
+
+#bubble-image-me {
+    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 12px;
+}
+
+#bubble-image-you {
+    background-image: url('https://i.imgur.com/gpYOjCg.jpeg');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    margin-right: 12px;
+}
+
+
+#sender-massage {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#received-message {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+#message-input {
+    display: grid;
+    grid-template-columns: 0.9fr 0.1fr;
+    min-height: 70px;
+    grid-gap: 5%;
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    padding: 0px 16px;
+    margin: 30px;
+    box-shadow: 0 0 5px 0 rgba(201, 201, 201, 0.24), 0 5px 5px 0 rgba(201, 201, 201, 0.24);
+}
+
+::placeholder {
+    color: rgb(159, 170, 184);
+}
+
+#message-text {
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.9rem;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 0;
+}
+
+.current-time {
+    font-size: 10px;
+    color: #828282;
+}
+
+.current-time-you {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(243, 246, 255);
+    border-radius: 50%;
+    border-width: 0;
+    outline: none;
+}
+
+
+#send-svg-icon {
+    padding: 5px 5px 0 0;
+    height: 60%;
+    filter: invert(48%) sepia(30%) saturate(1000%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+#chat-messages {
+    color: black;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+p {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+
+/*CHAT BUBBLES*/
+.answer {
+    color: red;
+}
+
+.bubble {
+    box-shadow: 5px 5px 6px #E8EBFB;
+    vertical-align: top;
+    max-width: 350px;
+    min-width: 100px;
+    word-wrap: break-word;
+    font-size: 20px;
+    clear: both;
+}
+
+
+.me {
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 15px 0;
+    color: #46484e;
+    padding: 15px 30px 15px 15px;
+    float: left;
+    margin: 5px 45px 5px 50px;
+}
+
+.me::before {
+    box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4);
+    left: -9px;
+}
+
+.you {
+    background-color: #4CAF50;
+    border-radius: 15px 15px 0px 15px;
+    color: #FFFFFF;
+    padding: 15px 15px 15px 30px;
+    margin: 5px 50px 5px 45px;
+    float: right;
+    text-align: right;
+}
+
+.you::before {
+    box-shadow: 2px -2px 2px 0 rgba(178, 178, 178, .4);
+    right: -9px;
+}
+
+
+/*BUTTON*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* SWITCH */
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+

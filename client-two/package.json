@@ -1,0 +1,41 @@
+{
+  "name": "Client-Two",
+  "version": "1.0.0",
+  "description": "Client two of chat application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build": "electron-builder --help"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "Chat app"
+  ],
+  "author": "Mirza Č.",
+  "license": "private",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.8.1",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.noname.client-two",
+    "copyright": "Copyright 2020 Mirza Č.",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}

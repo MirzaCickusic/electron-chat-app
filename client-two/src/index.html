@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <title>Chat App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!--    <style>-->
+    <!--      html { font-family: sans-serif; background: #2B2E3B; color: #9FEAF9; }-->
+    <!--    </style>-->
+    <script defer src="renderer.js"></script>
+</head>
+
+<body>
+
+<div id="chat-container">
+    <div id="chat-title">
+        <div id="avatar"></div>
+        <div id="user-name-status">
+            <span id="user-name"></span>
+            <span id="user-status">Online</span>
+        </div>
+        <label class="switch">
+            <input class="messageCheckbox" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="chat-messages">
+    </div>
+
+    <div id="message-input">
+        <input class="mess" id="message-text" type="text" placeholder="Type a message here"
+               autofocus>
+        <button type="submit"
+                id="button"><img src="assets/images/send.svg" id="send-svg-icon"></button>
+    </div>
+
+</div>
+
+</body>
+</html>
