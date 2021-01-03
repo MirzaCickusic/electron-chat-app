@@ -18,7 +18,7 @@ How to run:
 - Run server.exe executable you downloaded
 - Create folder where you want to clone this repository
 - Clone the repository
-- `cd` to client-one and run `electron .`
-- `cd` to client-two and run `electron .`
+- `cd` to client-one, run `npm install` and run `electron .`
+- `cd` to client-two, run `npm install` and run `electron .`
 - Both clients should now be running and peer-to-peer comunication should be enabled
 
